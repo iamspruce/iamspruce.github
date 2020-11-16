@@ -39,7 +39,7 @@ permalink: /index.html
           <header class="c-summary__header">
             <p class="c-summary__meta">
               <time class="dt-published" datetime="2019-12-24T00:00:00+00:00">
-      {{ post.date }}
+      {{ post.date | date_to_string }}
     </time>
               
           </p>
@@ -54,7 +54,7 @@ permalink: /index.html
           
           <footer class="c-summary__footer">
             <p class="p-summary">
-              {{ post.excerpt }}
+              {{ post.excerpt | truncatewords: 50, '...' | strip_html }}
             </p>
           </footer>
       </article>
