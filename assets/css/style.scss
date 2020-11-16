@@ -1,3 +1,7 @@
+--- 
+#Spruce blog css
+---
+
 $color-bg: #fff;
 $color-text: #0a0a23;
 $color-primary: #7f62e4;
@@ -9,21 +13,21 @@ $color-border: #dfe3e8;
 $color-gradient: linear-gradient(60deg, $color-primary-offset 0%, #ededed 100%);
 
 /* global css */
-@import "sass/fonts";
-@import "sass/reset";
+@import "fonts";
+@import "reset";
 
 /* utilities */
-@import "sass/utilities";
+@import "utilities";
 
 /* modules */
-@import "sass/header";
-@import "sass/footer";
-@import "sass/btns";
-@import "sass/section";
-@import "sass/columns";
-@import "sass/text";
-@import "sass/headings";
-@import "sass/article";
+@import "header";
+@import "footer";
+@import "btns";
+@import "section";
+@import "columns";
+@import "text";
+@import "headings";
+@import "article";
 
 
 
