@@ -6,7 +6,7 @@
 
 .c-hero {
     background: linear-gradient(to bottom right, $color-primary 50%, transparent),
-    url("{{ site.baseurl }}/assets/img/hero.png") no-repeat;
+    url("/assets/img/hero.png") no-repeat;
     background-position: center, 100% 100%;
     background-size: cover, 70%;
     color: $color-white;
