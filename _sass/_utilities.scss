@@ -1,0 +1,31 @@
+/* hide elements */
+.sr-only {
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border-width:0;
+   }
+   .wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $color-white;
+  }
+  .margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .not-mobile {
+    display: none;
+  }
+  @media (min-width: 442px) {
+    .not-mobile {
+    display:block;
+  }
+}

@@ -1,0 +1,68 @@
+---
+layout: default
+title: home
+permalink: /index.html
+---
+
+
+<section class="section c-hero">
+  <div class="c-hero__inner col-7 margin-auto text--center">
+    <h1 class="text--large">
+      Hello Am
+      Spruce Emmanuel
+    </h1>
+    <p class="text--sub">
+      Am a web developer and designer from Africa, Nigeria and this is my blog where i write about my learning process.
+    </p>
+
+    <a href="#0" class="btn btn--large btn--border">
+      Get In Touch
+    </a>
+  </div>
+  
+</section> 
+<section class="section section--tight">
+  <div class="page-intro">
+    <span class="page-intro__inner">
+      <span class="page-intro__inner-text">
+      Racent Articles
+      </span>
+    </span>
+  </div>
+  <ol class="c-listing--summaries">
+
+    {% for post in site.posts %}
+
+    <li>
+  
+<article class="c-summary h-entry">
+          <header class="c-summary__header">
+            <p class="c-summary__meta">
+              <time class="dt-published" datetime="2019-12-24T00:00:00+00:00">
+      {{ post.date }}
+    </time>
+              
+          </p>
+              <h3 class="c-summary__title  p-name">
+                  <a class="u-url" rel="bookmark" href="{{ post.url }}">
+                    {{ post.title }}
+                  </a>
+              </h3>
+              <span class="c-summary__author">by <a href="{{ post.author_url }}">{{ post.author }}</a></span>
+            
+          </header>
+          
+          <footer class="c-summary__footer">
+            <p class="p-summary">
+              {{ post.excerpt }}
+            </p>
+          </footer>
+      </article>
+    </li>
+    {% endfor %}
+    
+  </ol>
+  <div class="c-listing--more">
+    <button class="btn btn--half btn--small">Load more articles</button>
+</div>
+</section>

@@ -1,0 +1,63 @@
+.c-banner {
+    background-color: $color-primary;
+    padding: .9em 0;
+}
+.c-banner__wrapper,.c-nav,.c-nav__items {
+    display: flex;
+    align-items: center;
+}
+.c-nav {
+    margin-left: auto;
+}
+.c-banner__logo {
+    font-family: Gotham Rounded;
+    font-size: 1.3em;
+}
+.c-banner__logo,.c-nav__label,.c-nav__button {
+    display: inline-block;
+    padding: .5em;
+    color: $color-white;
+
+}
+@media (max-width: 566px) {
+    .c-nav__items {
+        display: none;
+    }
+    .c-nav__items {
+        background: $color-primary;
+        position: absolute;
+        z-index: 999;
+        top: -999px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: top .4s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+
+    }
+    .c-nav__label {
+        font-size: 2em;
+        font-family: Gotham Rounded;
+    }
+    .c-nav__items.active {
+        top: 0;
+    }
+    .c-nav__button {
+        position: relative;
+        z-index: 9999;
+    }
+    .c-nav__button.active .c-nav__icon {
+        display: none;
+    }
+    .c-nav__button.active .c-nav__icon--close {
+        display: block;
+    }
+}
+@media (min-width: 567px) {
+    .c-nav__button {
+        display: none;
+    }
+}

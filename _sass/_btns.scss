@@ -1,0 +1,57 @@
+.btn {
+ border-radius:6px;
+ text-align: center;
+    vertical-align: middle;
+    transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    
+}
+.btn--border {
+    background-color: transparent;
+    border: 2px solid $color-white;
+    color: $color-white;
+
+
+    &:hover,&:focus {
+        background:$color-white;
+         color: $color-primary;
+         border-color: $color-primary
+            }
+
+}
+.btn--primary {
+    background: $color-gradient;
+    color: $color-white;
+
+    &:hover,&:focus {
+        background:$color-primary;
+         color:#fff;
+         border-color:$color-primary
+            }
+}
+.btn--half {
+    width: 50%;
+    min-height: 40px;
+    border: 2px solid #0a0a23;
+    background: #ccc;
+    color: #0a0a23;
+
+    &:hover,&:focus {
+        background-color: $color-primary-offset;
+        color: $color-white;
+    }
+}
+.btn.btn--small {
+ font-size:.9em;
+ margin:0;
+ padding:.4em 1em
+}
+
+.btn.btn--medium {
+ font-size:calc(.9em + .1vw);
+ padding:.75em 1em
+}
+
+.btn.btn--large {
+ font-size:calc(.9em + .25vw);
+ padding:.75em
+}
