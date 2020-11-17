@@ -3,87 +3,116 @@ layout: default
 ---
     
 
-<section class="panel panel--tight">
-<article class="article-post grid">
-  <div class="grid__item">
-  {% assign author = site.authors | where: 'name', page.author | first %}
-    {% if author %}
-    <div class="mb-5">
-       <div class="l-author-bio">
-     <div class="w-48 h-48 bio-image__large rounded-3xl mb-5">
-      <figure role="presentation" class="bio-image">
-    
-     <a href="{{ author.url }}" class="bio-image-link">
-     <div class="bio-image-wrapper post">
-     <img class="bio-image-image" src="{{ site.baseurl }}/{{ author.avatar }}" loading="lazy" alt="{{ author.name }}"></div></a></figure></div><div class="l-author-bio-content author__desc"><h3 class="author__desc__title">About The Author</h3><p> {{ author.bio }}
-    <a href="{{ author.url }}" class="show-more-link">More about
-         <span> {{ author.name }}
-       </span>…</a></p></div></div></div>
-       {% endif %}
-    <header class="article-header">
-    <ul class="article-header--meta">
-      <li class="article-header--meta-item article-header--meta-item__date">
-    <time class="article-header--date" datetime="{{ page.date | date_to_string }}">
-     {{ page.date | date_to_string }}
-          </time>
-        </li>
-        <li class="article-header--meta-item"><span class="article-header--comments">
-          <a href="#comments"><span>Leave a comment</span></a>
-          </span>
-          </li>
-          </ul>
-  <h1 class="article-header--title gotham">
-      {{ page.title }}
-  </h1>
-  </header>
-  
-  <div class="article--meta section--offset">
-   
-    <ul class="meta-box meta-box--article">
-    <li class="meta-box--item meta-box--published">
-      {% include reading-time.html %}
-      </li>
-    <li class="meta-box--item meta-box--tags">
-    {% if page.tags %}
-<span class="tags">
-  <img src="/assets/images/icons/tag.svg" class="postIcon" />
-  {% for tag in page.tags %}
-  <em>{{ tag }}</em>
-  {% endfor %}
-</span>
-{% endif %}
-</li>
-</ul></div>
-<hr />
-<div class="article-post__content">
-  {{ content }}
-  {% capture words %}
-  {{ content | number_of_words | minus: 180 }}
-  {% endcapture %}
-</div>
-<hr />
-  {% if page.comments == true %}
-  {% include comments.html %}
-  {% else %}
-          <div class="c">
-        <div class="info">
-      <img alt="Pastor Seeds family logo" src="{{ site.baseurl }}/images/PSF-12-LOGO-white.png" class="partycat">
-           <div>
-     <p>
-      Please note <strong>Commenting</strong>
-         as being turned off for this post.
-         <br>Is there anything you want to share with us? Please
-                  <a href="{{site.baseurl }}/contact.html">
-                    contact us
-                  </a>
-                </p>
-              </div>
-            </div>
-  </div>
-  {% endif %}
 
+<div class="col-12">
+  <div class="col-1 c-article__share">
+    <ul class="c-share-items">
+      <li>
+        <a href="#0" class="c-share__label">
+          <svg width="16px" height="16px">
+            <use xlink:href="#logo-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#0" class="c-share__label">
+          <svg width="16px" height="16px">
+            <use xlink:href="#logo-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
-  </article>
-  </section>
+  <div class="col-12">
+    <article class="c-article">
+      <header class="c-article__header">
+        <p class="c-article__meta">
+          <time class="dt-published" datetime="{{ page.date }}">
+            {{ page.date | date_to_string }}
+  </time>
+  <span class="c-article__tags p-category">
+    {% for tag in aite.tags %}
+      {{ tag.name }}
+    {% endfor %}
+
+  </span>
+      </p>
+          <h3 class="c-article__title  p-name">
+                {{ page.title }}
+          </h3>
+  
+      <p class="c-article__summary">
+        {{ page.summary }}
+      </p>    
+  
+          <span class="c-article__author">Writen By <a href="https://fb.me/{{ page.author_url }}">{{ page.author }}</a></span>
+        
+      </header>
       
-      
+      <footer class="c-article__footer">
+        <div class="p-article e-content">
+          {{ content }}
+        </div>
+      </footer>
+      <div class="post__footer">
+       
+        <p class="post__footer__info">
+          Published in <span class="tags">
+            {% for tag in page.tags %}
+            <em>{{ tag }}</em>
+            {% endfor %}
+          </span>
+           ⋅ {{ page.date | date_to_string }}
+        </p>
+        <a href="https://twitter.com/sprucekhalifa" target="_blank" rel="noopener noreferrer" title="Follow Max Böck on Twitter" class="btn btn--medium btn--primary">
+          <svg class="icon icon--twitter" role="img" aria-hidden="true" width="24" height="24">
+            <use xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-twitter"></use>
+          </svg> Follow @Spruce</a></div>
+    </article>
+   
+  </div>
+
+</div>
+<section class="section section--tight">
+  <div class="page-intro">
+    <span class="page-intro__inner">
+      <span class="page-intro__inner-text">
+      Related articles
+      </span>
+    </span>
+  </div>
+  <ol class="c-listing--summaries">
+
+    {% for post in site.posts | limit: 3 %}
+
+    <li>
+  
+<article class="c-summary h-entry">
+          <header class="c-summary__header">
+            <p class="c-summary__meta">
+              <time class="dt-published" datetime="{{ page.date }}">
+      {{ post.date | date_to_string }}
+    </time>
+              
+          </p>
+              <h3 class="c-summary__title  p-name">
+                  <a class="u-url" rel="bookmark" href="{{ post.url }}">
+                    {{ post.title }}
+                  </a>
+              </h3>
+              <span class="c-summary__author">by <a href="{{ post.author_url }}">{{ post.author }}</a></span>
+            
+          </header>
+          
+          <footer class="c-summary__footer">
+            <p class="p-summary">
+              {{ post.excerpt | truncatewords: 40, '...' | strip_html }}
+            </p>
+          </footer>
+      </article>
+    </li>
+    {% endfor %}
+    
+  </ol>
+</section>
+    

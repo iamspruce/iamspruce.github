@@ -31,14 +31,14 @@ permalink: /index.html
   </div>
   <ol class="c-listing--summaries">
 
-    {% for post in site.posts %}
+    {% for post in site.posts | limit: 6 %}
 
     <li>
   
 <article class="c-summary h-entry">
           <header class="c-summary__header">
             <p class="c-summary__meta">
-              <time class="dt-published" datetime="2019-12-24T00:00:00+00:00">
+              <time class="dt-published" datetime="{{ page.date }}">
       {{ post.date | date_to_string }}
     </time>
               
@@ -63,6 +63,6 @@ permalink: /index.html
     
   </ol>
   <div class="c-listing--more">
-    <button class="btn btn--half btn--small">Load more articles</button>
+    <a href="{{ site.baseurl }}/articles.html" class="btn btn--half btn--small">Load more articles</a>
 </div>
 </section>

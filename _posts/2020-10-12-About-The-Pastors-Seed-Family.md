@@ -1,8 +1,9 @@
 ---
 layout: post
 title: About the Pastor Seed Family
-author: Psfedo3
-intro: >
+author: Spruce
+author__link: spruce.emma
+summary: >
   Learn About The Reedemed Christan Church Pastors Seed Family
 tags: About 
 ---
