@@ -60,6 +60,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-redirect-from
+  - jekyll-webmention_io
 
 # Site owner
 owner:
