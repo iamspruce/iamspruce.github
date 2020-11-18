@@ -2,6 +2,13 @@
     background-color: $color-primary;
     padding: .9em 0;
 }
+.article-page .c-banner {
+    background-color: $color-white;
+
+    .c-banner__logo,.c-nav__label,.c-nav__button {
+        color: $color-text;
+    }
+}
 .c-banner__wrapper,.c-nav,.c-nav__items {
     display: flex;
     align-items: center;
