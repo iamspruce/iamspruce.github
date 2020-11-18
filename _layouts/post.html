@@ -31,8 +31,9 @@ layout: default
             {{ page.date | date_to_string }}
   </time>
   <span class="c-article__tags p-category">
-      {{ post.tags | sort | join: ', ' }},
-    
+    {% for tag in site.tags %}
+      {{ tag[0] }},
+    {% endfor %}
 
   </span>
       </p>
