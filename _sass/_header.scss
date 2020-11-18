@@ -9,6 +9,7 @@
         color: $color-text;
     }
 }
+
 .c-banner__wrapper,.c-nav,.c-nav__items {
     display: flex;
     align-items: center;
@@ -48,6 +49,7 @@
     .c-nav__label {
         font-size: 2em;
         font-family: Gotham Rounded;
+        color: $color-white!important;
     }
     .c-nav__items.active {
         top: 0;
