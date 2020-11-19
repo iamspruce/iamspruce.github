@@ -9,6 +9,13 @@
         color: $color-text;
     }
 }
+.articles-page .c-banner, .articles-page .wrapper {
+    background-color: $color-article-bg;
+
+    .c-banner__logo,.c-nav__label,.c-nav__button {
+        color: $color-text;
+    }
+}
 
 .c-banner__wrapper,.c-nav,.c-nav__items {
     display: flex;
@@ -46,7 +53,7 @@
         transition: top .4s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 
     }
-   .c-banner__wrapper .c-nav__label {
+    .c-nav__label {
         font-size: 2em;
         font-family: Gotham Rounded;
         color: $color-white!important;

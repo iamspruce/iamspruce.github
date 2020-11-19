@@ -116,47 +116,20 @@
 }
 .p-article {
     font-size: calc(1rem + .5vw);
-    padding:.7em .5em;
+    padding: .5em;
     
 
-        a {
-            color: $color-primary;
+    p:first-of-type {
+
+        &::first-letter {
+            font-size: 2em;
+            font-family: Gotham Rounded;
+            text-transform: capitalize;
+            padding-right: .1em;
+            float: left;
         }
 
-        ol,
-ul {
- padding:0;
- margin:1em 0;
- max-width:100%
-}
-ol {
- list-style:none;
- counter-reset:listCounter
-}
-ol>li {
- padding-left:1.75em;
- padding-left:calc(1.65em + .7vw);
- position:relative;
- counter-increment:listCounter;
- margin-bottom:1em
-}
-ol>li::before {
- content:counter(listCounter,decimal-leading-zero);
- font-size:.7em;
- font-weight:700;
- color: $color-primary;
- left:.8em;
- position:absolute;
-}
-
-ol ol>li {
- padding-left:2.25em;
- padding-left:calc(1.35em + .7vw)
-}
-ol ol ol>li {
- padding-left:3em;
- padding-left:calc(2.4em + 1.4vw)
-}
+    }
     
 
     code {
@@ -175,14 +148,32 @@ ol ol ol>li {
         margin-top: 1.5em;
         margin-bottom: .5em
     }
-    
-}
-.p-article__lead::first-letter {
-    font-size: 2em;
-    font-family: Gotham Rounded;
-    text-transform: capitalize;
-    padding-right: .1em;
-    float: left;
+
+    img {
+        max-width: 100%; }
+     figure {
+        background: transparent;
+        border: 0;
+        margin-top: 16px;
+        margin-bottom: 16px;
+
+        img {
+            display: block;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+        
+            &:hover {
+                -webkit-filter: none;
+                        filter: none; }
+        }
+     }
+        
+        
+     figcaption {
+        padding-top: 8px;
+        color: #737373;
+        text-align: center; }
 }
 .info {
     position: relative;
@@ -246,8 +237,29 @@ ol ol ol>li {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
     }
 }
-.c-webmentions {
-    padding: 1em 0;
-    border-bottom: 1px solid $color-border;
 
+/* articles list */
+.c-articles {
+    transition: all .3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    margin: 1em 0;
+    padding: .5em .3em;
+
+    &:hover {
+        background-color: $color-bg;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+        border-radius: 4px;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+.c-articles__more {
+    text-align: center;
+    margin: 1em 0 2em 0;
+
+    p {
+    font-size: 2em;
+    margin-bottom: .5em;
+    }
 }

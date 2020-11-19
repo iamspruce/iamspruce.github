@@ -1,316 +1,329 @@
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 
- *,*:after,*:before {
-     padding: 0px;
-     margin: 0px;
-     box-sizing: inherit;
- }
+*,*:after,*:before {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: inherit;
+}
+ 
+html{
+    font-size: 1em;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   line-height:1.15;
+   -ms-text-size-adjust:100%;
+   -webkit-text-size-adjust:100%;
+   box-sizing: border-box;
+  }
+  html,body {
+   overflow-x: hidden;
+   height: 100%;
+
+  }
+  body {
+   margin:0;
+   background-color: #f5f5f5;
+  }
   
- html{
-     font-size: 1em;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    line-height:1.15;
-    -ms-text-size-adjust:100%;
-    -webkit-text-size-adjust:100%;
-    box-sizing: border-box;
-   }
-   html,body {
-    overflow-x: hidden;
-    height: 100%;
-
-   }
-   body {
-    margin:0;
-    background-color: #f5f5f5;
-   }
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section {
+   display:block
+  }
+  figcaption,
+  figure,
+  main {
+   display:block
+  }
+  figure {
+   margin:0
+  } 
+  h1,h2,h3,h4,h5,h6 {
+      font-weight: 400;
+  }
+  hr {
+   box-sizing:content-box;
+   height:0;
+   overflow:visible
+  }
+  pre {
+   font-family:monospace,monospace;
+   font-size:1em
+  }
+  p {
+   line-height: calc(1.5em + .2vw);
+   word-break: break-word;
+   margin-bottom: 1.375em;
+   max-width: 50rem;
+  }
+  
+  a {
+   transition: all .3s;
+   text-decoration: none;
+   color: inherit;
+   display: inline-block;
    
-   article,
-   aside,
-   footer,
-   header,
-   nav,
-   section {
-    display:block
+   &:hover {
+   color:rgba(0,0,0,.5);
+   background-color: rgba(0,0,0,.2)
    }
-   figcaption,
-   figure,
-   main {
-    display:block
-   }
-   figure {
-    margin:0
-   } 
-   h1,h2,h3,h4,h5,h6 {
-       font-weight: 400;
-   }
-   hr {
-    box-sizing:content-box;
-    height:0;
-    overflow:visible
-   }
-   pre {
-    font-family:monospace,monospace;
-    font-size:1em
-   }
-   p {
-    line-height: calc(1.5em + .2vw);
-    word-break: break-word;
-    margin-bottom: 1.375em;
-    max-width: 50rem;
-   }
-   
-   a {
-    transition: all .3s;
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    
-    &:hover {
-    color:rgba(0,0,0,.5);
-    background-color: rgba(0,0,0,.2)
-    }
-   }
+  }
 
-   abbr[title] {
-    border-bottom:none;
-    text-decoration:underline;
-    -webkit-text-decoration:underline dotted;
-    text-decoration:underline dotted
-   }
-   b,
-   strong {
-    font-weight:inherit
-   }
-   b,
-   strong {
-    font-weight:bolder;
-    letter-spacing:.25px
-   }
-   code,
-   kbd,
-   samp {
-    font-family:monospace,monospace;
-    font-size:1em
-   }
-   dfn {
-    font-style:italic
-   }
-   mark {
-    background-color:#ff0;
-    color:#000
-   }
-   small {
-    font-size:80%
-   }
-   sub,
-   sup {
-    font-size:75%;
-    line-height:0;
-    position:relative;
-    vertical-align:baseline
-   }
-   sub {
-    bottom:-.25em
-   }
-   sup {
-    top:-.5em
-   }
-   audio,
-   video {
-    display:inline-block
-   }
-   audio:not([controls]) {
-    display:none;
-    height:0
-   }
-   ul,ol {
-       list-style: none;
-   }
-   img {
-    border-style:none;
+  abbr[title] {
+   border-bottom:none;
+   text-decoration:underline;
+   -webkit-text-decoration:underline dotted;
+   text-decoration:underline dotted
+  }
+  b,
+  strong {
+   font-weight:inherit
+  }
+  b,
+  strong {
+   font-weight:bolder;
+   letter-spacing:.25px
+  }
+  code,
+  kbd,
+  samp {
+   font-family:monospace,monospace;
+   font-size:1em
+  }
+  dfn {
+   font-style:italic
+  }
+  mark {
+   background-color:#ff0;
+   color:#000
+  }
+  small {
+   font-size:80%
+  }
+  sub,
+  sup {
+   font-size:75%;
+   line-height:0;
+   position:relative;
+   vertical-align:baseline
+  }
+  sub {
+   bottom:-.25em
+  }
+  sup {
+   top:-.5em
+  }
+  audio,
+  video {
+   display:inline-block
+  }
+  audio:not([controls]) {
+   display:none;
+   height:0
+  }
+  ul,ol {
+      list-style: none;
+  }
+  img {
+   max-width: 100%;
+   /* [1] */
+   font-style: italic;
+   /* [2] */
+   vertical-align: middle;
+   /* [3] */ }
+ 
+ /**
+  * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
+  *    not make the image fluid.
+  */
+ img[width],
+ img[height] {
+   /* [1] */
+   max-width: none; }
+ 
+  svg {
+      vertical-align: middle;
+      fill: currentColor;
+  }
+  svg:not(:root) {
+   overflow:hidden
+  }
+  button,label {
+      cursor: pointer;
+      background-color: transparent;
+      border: 0;
+  }
+  button {
 
-   }
-   svg {
-       vertical-align: middle;
-       fill: currentColor;
-   }
-   svg:not(:root) {
-    overflow:hidden
-   }
-   button,label {
-       cursor: pointer;
-       background-color: transparent;
-       border: 0;
-   }
-   button {
+   &:hover,&:focus {
+       box-shadow: 0px 2px 4px rgba(255,255,255,.4);
+     }
+  }
+  input {
 
-    &:hover,&:focus {
-        box-shadow: 0px 2px 4px rgba(255,255,255,.4);
-      }
-   }
-   input {
-
-    &:hover,&:focus {
-        box-shadow: 0px 2px 4px rgba(255,255,255,.4);
-      }
-   }
-   button,
-   input,
-   optgroup,
-   select,
-   textarea {
-    font:inherit;
-    margin:0
-   }
-   optgroup {
-    font-weight:700
-   }
-   button,
-   select {
-    text-transform:none
-   }
-   [type=reset],
-   [type=submit],
-   button,
-   html [type=button] {
-    -webkit-appearance:button
-   }
-   [type=button]::-moz-focus-inner,
-   [type=reset]::-moz-focus-inner,
-   [type=submit]::-moz-focus-inner,
-   button::-moz-focus-inner {
-    border-style:none;
-    padding:0
-   }
-   [type=button]:-moz-focusring,
-   [type=reset]:-moz-focusring,
-   [type=submit]:-moz-focusring,
-   button:-moz-focusring {
-    outline:1px dotted;
-   }
-   fieldset {
-    border:1px solid silver;
-    margin:0 2px;
-    padding:.35em .625em .75em
-   }
-   legend {
-    box-sizing:border-box;
-    color:inherit;
-    display:table;
-    max-width:100%;
-    padding:0;
-    white-space:normal
-   }
-   progress {
-    display:inline-block;
-    vertical-align:baseline
-   }
-   textarea {
-    overflow:auto
-   }
-   [type=checkbox],
-   [type=radio] {
-    box-sizing:border-box;
-    padding:0
-   }
-   [type=number]::-webkit-inner-spin-button,
-   [type=number]::-webkit-outer-spin-button {
-    height:auto
-   }
-   [type=search] {
-    -webkit-appearance:textfield;
-    outline-offset:-2px
-   }
-   [type=search]::-webkit-search-cancel-button,
-   [type=search]::-webkit-search-decoration {
-    -webkit-appearance:none
-   }
-   ::-webkit-file-upload-button {
-    -webkit-appearance:button;
-    font:inherit
-   }
-   details,
-   menu {
-    display:block
-   }
-   summary {
-    display:list-item
-   }
-   canvas {
-    display:inline-block
-   }
-   template {
-    display:none
-   }
-   [hidden] {
-    display:none
-   }
-   .h1,
+   &:hover,&:focus {
+       box-shadow: 0px 2px 4px rgba(255,255,255,.4);
+     }
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+   font:inherit;
+   margin:0
+  }
+  optgroup {
+   font-weight:700
+  }
+  button,
+  select {
+   text-transform:none
+  }
+  [type=reset],
+  [type=submit],
+  button,
+  html [type=button] {
+   -webkit-appearance:button
+  }
+  [type=button]::-moz-focus-inner,
+  [type=reset]::-moz-focus-inner,
+  [type=submit]::-moz-focus-inner,
+  button::-moz-focus-inner {
+   border-style:none;
+   padding:0
+  }
+  [type=button]:-moz-focusring,
+  [type=reset]:-moz-focusring,
+  [type=submit]:-moz-focusring,
+  button:-moz-focusring {
+   outline:1px dotted;
+  }
+  fieldset {
+   border:1px solid silver;
+   margin:0 2px;
+   padding:.35em .625em .75em
+  }
+  legend {
+   box-sizing:border-box;
+   color:inherit;
+   display:table;
+   max-width:100%;
+   padding:0;
+   white-space:normal
+  }
+  progress {
+   display:inline-block;
+   vertical-align:baseline
+  }
+  textarea {
+   overflow:auto
+  }
+  [type=checkbox],
+  [type=radio] {
+   box-sizing:border-box;
+   padding:0
+  }
+  [type=number]::-webkit-inner-spin-button,
+  [type=number]::-webkit-outer-spin-button {
+   height:auto
+  }
+  [type=search] {
+   -webkit-appearance:textfield;
+   outline-offset:-2px
+  }
+  [type=search]::-webkit-search-cancel-button,
+  [type=search]::-webkit-search-decoration {
+   -webkit-appearance:none
+  }
+  ::-webkit-file-upload-button {
+   -webkit-appearance:button;
+   font:inherit
+  }
+  details,
+  menu {
+   display:block
+  }
+  summary {
+   display:list-item
+  }
+  canvas {
+   display:inline-block
+  }
+  template {
+   display:none
+  }
+  [hidden] {
+   display:none
+  }
+  .h1,
 h1 {
- font-size:calc(1.625rem + 1.6vw);
- margin-bottom: .55em;
- font-family: Gotham Rounded
+font-size:calc(1.625rem + 1.6vw);
+margin-bottom: .55em;
+font-family: Gotham Rounded
 
 }
 
 .h2,
 h2 {
- font-size:calc(1.375rem + .2vw);
- margin-bottom: .55em;
- font-family: Gotham Rounded
+font-size:calc(1.375rem + .2vw);
+margin-bottom: .55em;
+font-family: Gotham Rounded
 
 }
 
 .h3,
 h3 {
- font-size:calc(1.5rem + .25vw);
- margin-bottom: .55em;
- text-transform:capitalize;
- 
- font-family: Gotham Rounded
+font-size:calc(1.5rem + .25vw);
+margin-bottom: .55em;
+text-transform:capitalize;
+
+font-family: Gotham Rounded
 }
 
 .h4,
 h4 {
- font-size:calc(1.125rem + .25vw);
- text-transform:uppercase;
- letter-spacing:1px;
- margin-top:2em;
- margin-bottom:1em;
- color:#333
+font-size:calc(1.125rem + .25vw);
+text-transform:uppercase;
+letter-spacing:1px;
+margin-top:2em;
+margin-bottom:1em;
+color:#333
 }
 .h5,
 h5 {
- font-style:italic;
- font-size:calc(1rem + .25vw);
- color:#444
+font-style:italic;
+font-size:calc(1rem + .25vw);
+color:#444
 }
 .h6,
 h6 {
- font-size:calc(1rem + .25vw);
- letter-spacing:1px;
- color:#444;
- text-transform:uppercase;
- margin:0
+font-size:calc(1rem + .25vw);
+letter-spacing:1px;
+color:#444;
+text-transform:uppercase;
+margin:0
 }
 @media all and (min-width:1550px) {
- .h1,
- h1 {
-  font-size:2.13894em
- }
- .h2,
- h2 {
-  font-size:2.14857em
- }
+.h1,
+h1 {
+ font-size:2.13894em
+}
+.h2,
+h2 {
+ font-size:2.14857em
+}
 }
 h2:target,
 h3:target,
 h4:target,
 h5:target,
 h6:target {
- color:#d33a2c;
- border-bottom:5px solid #d33a2c
+color:#d33a2c;
+border-bottom:5px solid #d33a2c
 }
 :target {
- scroll-margin-top:2rem
+scroll-margin-top:2rem
 }
