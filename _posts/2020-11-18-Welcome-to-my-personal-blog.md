@@ -13,7 +13,7 @@ tags: About
 Hey there welcome to my personal blog where i write about my learning process as a supposed web designer.
 </p>
  <div class="p-article__img">
-  [Hero website cover](/assets/img/hero.png)
+  <img src="{{ siye.baseurl }}/assets/img/hero.png" alt="website cover image" />
  </div>
 <p>
 This site (My personal blog) Which was <strong>lunched</strong> on the <b> 18th of November </b> is my own personal online journal where i blog about everything web design.
