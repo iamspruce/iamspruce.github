@@ -32,6 +32,26 @@
        color: $color-green;
        border: 1px solid $color-green;
    }
+   .btn--blue {
+       background-color: $color-blue;
+       border: 1px solid $color-blue-offset;
+       color: $color-white;
+   
+       &:hover,&:focus {
+           background-color: $color-white;
+           color: $color-blue
+       }
+   }
+   .btn--white {
+       background-color: $color-white;
+       border: 1px solid $color-blue-offset;
+       color: $color-blue;
+   
+       &:hover,&:focus {
+           background-color: $color-blue;
+           color: $color-white
+       }
+   }
    .btn.btn--radius {
        border-radius: 4rem
    }

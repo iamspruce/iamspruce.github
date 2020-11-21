@@ -77,6 +77,8 @@
     margin-left: auto;
     margin-right: auto;
     padding: calc(1rem + 1vw) .5em;
+    
+
 
 }
 .c-article__header {
@@ -111,12 +113,13 @@
 .c-article__author {
 
     a {
-    color: $color-primary;
+    color: $color-blue;
     }
 }
 .p-article {
     font-size: calc(1rem + .5vw);
     padding: .5em;
+    
     
 
     p:first-of-type {
@@ -263,3 +266,127 @@
     margin-bottom: .5em;
     }
 }
+
+/* c-comments section */
+
+#comments-section  {
+    max-width: 800px;
+}
+.c-comment__header {
+    border-bottom: 1px solid $color-border;
+    padding:0 0 1em 0;
+}
+.c-comment__form {
+    border-bottom: 1px solid $color-border;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+
+
+    * + * {
+        margin-top: .5em;
+    }
+}
+.c-comment--input__wrapper {
+
+
+    input, textarea {
+        border: 1px solid $color-border;
+        padding: 1em;
+        width: 100%;
+
+        &:hover,&:focus {
+        border: 2px solid $color-blue;
+        }
+    }
+}
+
+.c-comment--button__wrapper {
+    text-align: right;
+}
+
+/* article comment */
+.article__comment-wrapper {
+    padding: 1em 0;
+
+    .article__comment-wrapper {
+        margin-left: calc(48px + 1em);
+        margin-top: 2em;
+
+        .btn {
+            display: none;
+        }
+    }
+}
+.article__comment {
+    display: flex;
+}
+.article__comment-img {
+    width: 58px;
+    height: 58px;
+    border-radius: 11px;
+
+
+    img {
+        border: 1px solid $color-border;
+        border-radius: 11px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+.comment__content {
+    padding-left: .5em;
+
+    p {
+        margin-bottom: .5em;
+    }
+    &:first-child {
+        margin-bottom: .2em;
+    }
+    time {
+    color: $color-text-offset;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    }
+
+    a {
+        color: $color-blue;
+    }
+}
+
+/* article nav */
+
+.c-article-nav {
+    display:flex
+   }
+   
+   .c-article-nav__item {
+    color:#636373;
+    display:flex;
+    flex:50% 0 1;
+    justify-content:center;
+    width:auto;
+    box-shadow:inset 0 -1px 0 $color-border;
+    padding:1.5rem 1rem;
+    border:1px solid $color-border
+   }
+   .c-article-nav__item:focus {
+    outline:0;
+    box-shadow:inset 0 0 0 2px #3be
+   }
+   .c-article-nav__item:hover {
+    color: $color-blue;
+    background-color:rgba(239,239,240,.6)
+   }
+   .c-article-nav__item:active {
+    color: $color-blue-offset;
+    background-color:rgba(239,239,240,.8)
+   }
+   
+  
+   .c-article-nav__icon {
+    height:2.5rem;
+    width:2.5rem
+   }

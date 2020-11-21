@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Archives
-permalink: /article.html
+permalink: /articles.html
 ---
     
 <body id="top" class="articles-page">
@@ -45,7 +45,7 @@ permalink: /article.html
               </header>
               
               <footer class="c-articles__footer">
-                <p class="p-articles">{{ post.excerpt | truncatewords: 30, '...' | strip_html }}
+                <p class="p-articles">{{ post.summary | truncatewords: 30, '...' | strip_html }}
                 </p>
               </footer>
           </article>

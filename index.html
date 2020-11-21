@@ -48,13 +48,13 @@ permalink: /index.html
                     {{ post.title }}
                   </a>
               </h3>
-              <span class="c-summary__author">by <a href="{{ post.author_url }}">{{ post.author }}</a></span>
+              <span class="c-summary__author">by <a href="https://facebook.com/{{ post.author_url }}">{{ post.author }}</a></span>
             
           </header>
           
           <footer class="c-summary__footer">
             <p class="p-summary">
-              {{ post.excerpt | truncatewords: 40, '...' | strip_html }}
+              {{ post.summary | truncatewords: 40, '...' | strip_html }}
             </p>
           </footer>
       </article>

@@ -22,7 +22,7 @@ pagination:
 
       
 title: "Spruce Blog"
-description: "Spruce is a web developer and designer fron Nigeria"
+description: "Web developer and designer fron Nigeria"
 logo: assets/img/navicon.png
 locale: en
 url:
@@ -34,7 +34,7 @@ repository: "iamspruce/iamspruce.github.io"
 url: "https://iamspruce.github.io"
 
 # Staticman comments
-staticman_url: "https://psfstaticman.herokuapp.com/v2/entry/iamspruce/iamspruce.github.io/source/comments"
+staticman_url: "https://sprucestaticman.herokuapp.com/v2/entry/iamspruce/iamspruce.github.io/source/comments"
 
 
 
@@ -60,7 +60,6 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-redirect-from
-  - jekyll-webmention_io
 
 # Site owner
 owner:
