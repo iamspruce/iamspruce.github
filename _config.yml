@@ -34,7 +34,7 @@ repository: "iamspruce/iamspruce.github.io"
 url: "https://iamspruce.github.io"
 
 # Staticman comments
-staticman_url: "https://sprucestaticman.herokuapp.com/v2/entry/iamspruce/iamspruce.github.io/source/comments"
+staticman_url: "https://iamspruce-staticman.herokuapp.com/v2/entry/iamspruce/iamspruce.github.io/source/comments"
 
 
 
