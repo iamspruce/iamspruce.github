@@ -1,17 +1,17 @@
 - name: Home
   url: /
-  num: 01
+  num: "01"
   
 - name: About
   url: /about
-  num: 02
+  num: "02"
   
 - name: Articles
   url: /articles
-  num: 03
+  num: "03"
   
 - name: Follow
   url: https://twitter.com/spruckhalifa
-  num: 04
+  num: "04"
   
   
