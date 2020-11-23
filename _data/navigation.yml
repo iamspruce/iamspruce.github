@@ -1,16 +1,17 @@
 - name: Home
-  link: /
+  url: /
+  num: 01
   
 - name: About
-  link: /about
+  url: /about
+  num: 02
   
-- name: Gallery
-  link: /gallery
+- name: Articles
+  url: /articles
+  num: 03
   
-- name: Events
-  link: /events 
-  
-- name: Contact
-  link: /contact
+- name: Follow
+  url: https://twitter.com/spruckhalifa
+  num: 04
   
   
