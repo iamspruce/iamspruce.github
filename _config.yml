@@ -23,7 +23,6 @@ pagination:
       
 title: "Spruce Blog"
 description: "Web developer and designer from Nigeria"
-logo: /assets/img/spruce.jpg
 locale: en
 url:
 feed:

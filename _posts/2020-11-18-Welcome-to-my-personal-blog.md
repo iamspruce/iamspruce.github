@@ -12,9 +12,9 @@ tags: About
  <p class="p-article__lead">
 Hey there welcome to my personal blog where i write about my learning process as a supposed web designer.
 </p>
- <div class="p-article__img">
-  <img src="{{ siye.baseurl }}/assets/img/hero.png" alt="website cover image" />
- </div>
+ <figure class="p-article__img">
+  <img src="{{ site.baseurl }}/assets/img/hero.png" alt="website cover image" />
+ </figure>
 <p>
 This site (My personal blog) Which was <strong>lunched</strong> on the <b> 18th of November </b> is my own personal online journal where i blog about everything web design.
 </p>
