@@ -1,0 +1,101 @@
+---
+layout: default
+title: About
+description: I’m Spruce Emmanuel, a front-end web developer and designer based in Edo, Nigeria.
+permalink: /about/
+---
+
+
+<div class="section page--about">
+    <header class="page__header">
+    <h1 class="page__title">
+        Hello There.
+    
+    </h1>
+    </header>
+    <div class="page__content page__content--fullwidth">
+        <div class="about">
+        <div class="about__header">
+        <div class="about__photo">
+        <img class="responsive-image" src="/assets/img/spruce.jpg" srcset="/assets/img/spruce.jpg 800w, /assets/img/spruce.jpg 1600w" sizes="(min-width: 940px) 40vw, 100vw" alt="Spruce Emmanuel">
+    </div>
+    <div class="about__intro lead">
+        <p>
+        I’m Spruce Emmanuel, a front-end web developer and designer based in Edo, Nigeria.</p>
+       
+        <p>
+            And this is my personal online blog and journal where i document down my learning process as a designer.
+    
+        </p>
+    </div>
+    </div>
+        <div class="about__content">
+            
+            <h2>Writing</h2>
+            <p>
+            I like writing about web development and design on my blog. Majorly i document down what have learned so far on this blog and how it can help others. 
+            </p>
+                <h3 class="h3">
+                    Some Articles Have Written
+                </h3>
+                <ul>
+                    {% for post in site.posts | limit: 8 %}
+
+    <li>  
+
+                <a class="u-url" rel="bookmark" href="{{ post.url }}">
+                    {{ post.title }}
+                  </a>,  <time class="dt-published" datetime="{{ page.date }}">
+                    {{ post.date | date_to_string }}
+                  </time>
+    </li>
+    {% endfor %}
+                </ul>
+                <h2>Offline</h2>
+                <p>
+               When am not writting or blogging i like to watch movies, read books and most importantly learn new stuffs...
+                </p>
+                        <h2>Online</h2>
+                        <ul class="about__social">
+                            <li>
+                            <svg class="icon icon--twitter" role="img" aria-hidden="true" width="24" height="24">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-twitter">
+                                </use>
+                            </svg>
+                            <a href="https://twitter.com/sprucekhalifa"> 
+                                Twitter
+                            </a>
+                        </li>
+                            <li>
+                                <svg class="icon icon--github" role="img" aria-hidden="true" width="24" height="24">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="logo-github">
+                            </use>
+                        </svg>
+                            <a href="https://github.com/iamspruce">
+                                Github
+                            </a>
+                        </li>
+                            <li>
+                                <svg class="icon" role="img" aria-hidden="true" width="24" height="24">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-facebook">
+                            </use>
+                            </svg>
+                                <a href="https://facebook.com/spruce.emma">
+                                    Facebook
+                            </a>
+                            </li>
+                            <li>
+                                <svg class="icon" role="img" aria-hidden="true" width="24" height="24">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-note">
+                                    </use>
+                                </svg>
+                                <a href="https://instagram.com/spruce.emma">
+                                    Insstagram
+                                </a>
+                            </li>
+                            
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>

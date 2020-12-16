@@ -1,7 +1,7 @@
 ---
 layout: default
-title: home
-description: Spruce personal blog and online journal
+title: Home
+description:  Welcome to my online persona journal
 permalink: /index.html
 ---
 
@@ -16,7 +16,7 @@ permalink: /index.html
       Am a web developer and designer from Africa, Nigeria and this is my blog where i write about my learning process.
     </p>
 
-    <a href="{{ site.baseurl }}/contact" class="btn btn--large btn--border">
+    <a href="https://facebook.com/spruce.emma" class="btn btn--large btn--border">
       Get In Touch
     </a>
   </div>
@@ -55,7 +55,7 @@ permalink: /index.html
           
           <footer class="c-summary__footer">
             <p class="p-summary">
-              {{ post.summary | truncatewords: 40, '...' | strip_html }}
+              {{ post.excerpt | truncatewords: 40, '...' | strip_html }}
             </p>
           </footer>
       </article>
