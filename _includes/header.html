@@ -18,7 +18,7 @@
           <ul class="c-nav__items"> 
             {%- for link in site.data.navigation -%}
             <li class="c-nav__item">
-              <a class="c-nav__label {% if link.url == page.url %} c-nav__label--active {% endif %}" href="{{ link.url }}">
+              <a class="c-nav__label {% if page.url == link.url %} c-nav__label--active {% endif %}" href="{{ link.url }}">
                 <span class="c-nav__num" aria-hidden="true">{{ link.num }}</span>
                {{ link.name }}
               </a>
