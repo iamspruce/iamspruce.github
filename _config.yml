@@ -19,7 +19,13 @@ pagination:
     after: 2  
   
 # Site wide configuration
-
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      share: facebook twitter
       
 title: "Spruce Blog"
 description: "Web developer and designer from Nigeria"
@@ -59,18 +65,6 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-redirect-from
-
-# Site owner
-owner:
-  name:
-  email:
-  twitter:
-  google:
-    ad-client:
-    ad-slot:
-  bio:
-  avatar: bio-photo.jpg # 160x160 px image for author byline
-
 
 include:
   - .htaccess
