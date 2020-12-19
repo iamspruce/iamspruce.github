@@ -4,7 +4,7 @@ title: How To Create A Blog On Mobile With Jekyll On Github
 author: Spruce
 author_link: spruce.emma
 summary: >
-  An introduction plus a How To Create A Blog On Mobile With Jekyll On Github
+  Have you ever wanted to own your own blog? Well if you have, this series will get you started immediately
 tags: About
 sharing:
   twitter: How To Create A Blog On Mobile With Jekyll On Github
@@ -12,7 +12,7 @@ sharing:
 ---
 
 <p class="p-article__lead">
-Hey welcome to the series <b>"How to create a blog on your mobile phone with Jekyll on Github"</b>
+Welcome to the series <b>"How to create a blog on your mobile phone with Jekyll on Github"</b>
 </p>
 
 <p>
@@ -271,3 +271,5 @@ Now you can go and tell your family members, friends, share it on facebook and t
   Next step is Customizing your new website, and introducing you to <b>GIT</b> on your mobile phone... Thanks for reading.
  </p>
  
+
+
