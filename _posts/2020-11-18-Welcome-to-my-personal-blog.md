@@ -48,8 +48,10 @@ and some DESIGN TIPS
 </ol>
 <p>Once again welcome aboard... </p>
 
-<code data-lang="css">
+<pre class="language-css">
+<code class="language-css">
   #hey {
     welcome: dear reader;
   }
 </code>
+</pre>
