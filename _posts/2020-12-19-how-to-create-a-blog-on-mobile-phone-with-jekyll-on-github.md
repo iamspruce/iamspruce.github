@@ -118,7 +118,7 @@ Now Click below link (Open in a different tab) <br>
   </figcaption>
  </figure>
 <p>
-The page would reload and you would see a desktop view of, just look at the right side of the page at the header (top of the webpage) and click on <b>fork</b>
+The page would reload and you would see a desktop view of the page, just look at the right side of the page at the header (top of the webpage) and click on <b>fork</b>
 </p>
 <figure class="p-article__img">
   <img src="{{ site.baseurl }}/assets/img/posts/mobile-blog/fork-theme.png" alt="minimal mistakes starter theme" />
@@ -160,12 +160,13 @@ click on the dropdown menu at the top of the page
   </figcaption>
  </figure>
  <p>
-from the dropdown: <br>
-Click on settings <br>
-developer settings <br>
-personal access tokens <br>
-Generate New Token <br>
-You may be asked for password, just enter your github password and continue
+ <ol>
+<li> from the dropdown: </li>
+<li> Click on settings </li>
+<li> developer settings </li>
+<li> personal access tokens </li>
+<li> Generate New Token </li>
+<li> You may be asked for password, just enter your github password and continue </li> </ol>
  </p>
  <figure class="p-article__img">
   <img src="{{ site.baseurl }}/assets/img/posts/mobile-blog/spck-token.png" alt="Set up github personal token" />
@@ -175,10 +176,12 @@ You may be asked for password, just enter your github password and continue
   </figcaption>
  </figure>
  <p>
-Give it a note: Spck editor <br>
-click on the repo box (select everything under it) <br>
-Scroll select <b>write:packages</b> and <b> admin:org</b> <br>
-Click "Generate Token"
+ <ol>
+<li> Give it a note: Spck editor </li>
+<li>click on the repo box (select everything under it) </li>
+<li>Scroll select <b>write:packages</> and <b> admin:org</b> </li>
+<li>Click "Generate Token"</li>
+ </ol>
  </p>
  <p>
 After you have generated your token ensure you copy it to your phone clipboard because you wont see again unless you re-generate it.
@@ -192,7 +195,7 @@ After you have generated your token ensure you copy it to your phone clipboard b
  </figure>
 
  <p>
-If you have follows this guide perfectly, you are just a few steps away from your newly phone managed blog or website.
+If you have followed this guide perfectly, you are just a few steps away from your newly phone managed blog or website.
  </p>
 
  <p>
