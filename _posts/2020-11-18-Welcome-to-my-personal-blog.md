@@ -5,7 +5,8 @@ author: Spruce
 author_link: spruce.emma
 summary: >
   An introduction plus a welcome to my personal blog and online journal
-tags: About
+tags: About Welcome Intro
+image: img/hero.png
 sharing:
   twitter: Welcome to my personal blog and online journal
   facebook: Welcome to my personal blog and online journal
