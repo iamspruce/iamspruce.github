@@ -146,14 +146,9 @@ ol>li::before {
  color: $color-blue;
  left:.8em;
  position:absolute;
- font-family:Calibri Bold,AvenirNext,Avenir,-apple-system,BlinkMacSystemFont,Roboto Slab,Droid Serif,Segoe UI,Oxygen-Sans,Ubuntu,Cantarell,Georgia,serif
+ font-family:Product Sans,AvenirNext,Avenir,-apple-system,BlinkMacSystemFont,Roboto Slab,Droid Serif,Segoe UI,Oxygen-Sans,Ubuntu,Cantarell,Georgia,serif
 }
-.wf-loaded-stage1 ol>li::before {
- font-family:MijaInitial
-}
-.wf-loaded-stage2 ol>li::before {
- font-family:Mija
-}
+
 ol ol>li {
  padding-left:2.25em;
  padding-left:calc(1.35em + .7vw)
@@ -180,7 +175,8 @@ ol ol>li::before {
 
     h2,h3,h4,h5,h6 {
         margin-top: 1.5em;
-        margin-bottom: .5em
+        margin-bottom: .5em;
+        font-family: Product Sans;
     }
 
     img {
@@ -237,6 +233,9 @@ ol ol>li::before {
 }
 .info--warning {
     --color-info: red;        
+}
+.info--note {
+    --color-info: blue;        
 }
 .info__content {
     padding: 2em 1em;

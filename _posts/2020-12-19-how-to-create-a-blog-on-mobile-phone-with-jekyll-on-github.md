@@ -5,7 +5,7 @@ author: Spruce
 author_link: spruce.emma
 summary: >
   Have you ever wanted to own your own blog? Well if you have, this series will get you started immediately
-tags: About
+tags: Mobile Blog Design
 sharing:
   twitter: How To Create A Blog On Mobile With Jekyll On Github
   facebook: How To Create A Blog On Mobile With Jekyll On Github
@@ -83,7 +83,7 @@ Then <a href="https://spck.io">Spck Editor</a>, this is just a really cool code 
 Head over to play store search for "Spck editor" and install it. This editor is what we'll use to write to our blog...
 </p>
 
- <div class="info info--warning">
+ <div class="info info--note">
    <div class="info__content">
        <strong>Note:</strong> It is required that you create a github account and have downloaded and installed the app before you continue <br>
        Please don't use Opera Mini, use a modern browser like Chrome of Firefox
