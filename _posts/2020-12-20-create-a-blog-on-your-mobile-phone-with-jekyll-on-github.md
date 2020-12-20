@@ -6,6 +6,7 @@ author_link: spruce.emma
 summary: >
   Have you ever wanted to own your own blog? Well if you have, this series will get you started immediately
 tags: Mobile Blog Design
+image: img/posts/mobile-blog/spck-editor.png
 sharing:
   twitter: Create A Blog On Your Mobile Phone With Jekyll On Github
   facebook: Create A Blog On Your Mobile Phone With Jekyll On Github
