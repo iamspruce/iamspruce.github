@@ -14,7 +14,7 @@ themeColor: #ffffff
             {{ page.date | date_to_string }}
   </time>
   <span class="c-article__tags p-category">
-   {% for tag in site.tags %}
+   {% for tag in post.tags %}
      {{ tag[0] }},
     {% endfor %}
 
