@@ -14,9 +14,9 @@ themeColor: #ffffff
             {{ page.date | date_to_string }}
   </time>
   <span class="c-article__tags p-category">
-  {% if post.tags.size > 0 %}
-    {{ post.tags | sort | join: "," }}
-  {% endif %}
+  {% for tags in post.tags %}
+    {{ post.tag }},
+  {% endfor %}
 
   </span>
       </p>
