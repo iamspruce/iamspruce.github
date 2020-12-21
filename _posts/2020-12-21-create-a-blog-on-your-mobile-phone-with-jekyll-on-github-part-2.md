@@ -20,7 +20,7 @@ Quick Recap
 </h1>
 <p>
 Like i said this is the second part of this series, incase you missed the first part you can always go back and read it here: <br> <br>
-<a href="/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.md">Create a blog on your mobile phone part 1</a>. <br>
+<a href="{{ site.baseurl }}/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.md">Create a blog on your mobile phone part 1</a>. <br>
 Talking about readind the other article, You should really read that article up as this one is just building on what we learned in the orther article <br>
 <ol>
 We learn't a few and very essentials things though:
@@ -126,7 +126,7 @@ A lot of terminologies used here, dont worry about that, you will soon see them 
 </ol>
 <h6>
 Conncecting the dots...
-<h6>
+</h6>
 <p>
 You may be wondering, how does this have to do with blogging from mobile phone... <br>
 well from the explanations above, you only need two things
@@ -359,5 +359,5 @@ Well thats the end of this part of the series... Next stop is <b>Blogging</b>, T
 Previous parts of this series
  </h6>
  <p>
-<a href="/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.md">Create a blog on your mobile phone part 1</a>
+<a href="{{ site.baseurl }}/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.md">Create a blog on your mobile phone part 1</a>
  </p>

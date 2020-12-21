@@ -287,7 +287,7 @@ Though not really much now, Before the end of this series you will learn how to 
 Next part of this series
 </h6>
 <p>
-<a href="/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.md">Create a blog on your mobile phone part 2</a>
+<a href="{{ site.baseurl }}/create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.md">Create a blog on your mobile phone part 2</a>
 </p>
 
 
