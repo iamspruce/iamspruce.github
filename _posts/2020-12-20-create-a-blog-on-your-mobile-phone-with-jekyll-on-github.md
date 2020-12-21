@@ -98,7 +98,7 @@ Now Click below link (Open in a different tab) <br>
 </a>
 </p>
 <figure class="p-article__img">
-  <img src="{{ site.baseurl }}/assets/img/posts/mobile-blog/jekyll-theme.png" alt="Jekyyl now starter theme" />
+  <img src="{{ site.baseurl }}/assets/img/posts/mobile-blog/jekyll-theme.png" alt="Jekyll now starter theme" />
 
   <figcaption>
     You should see a page that looks like this
@@ -109,7 +109,7 @@ Now Click below link (Open in a different tab) <br>
   click on the <b>Forks icon</b> 
  </p>
  <figure class="p-article__img">
-  <img src="{{ site.baseurl }}/assets/img/posts/mobile-blog/click-forks.png" alt="Jekyyl now fork icon" />
+  <img src="{{ site.baseurl }}/assets/img/posts/mobile-blog/click-forks.png" alt="Jekyll now fork icon" />
 
   <figcaption>
     Click on the forks icon
@@ -119,7 +119,7 @@ Now Click below link (Open in a different tab) <br>
 The page would reload and you would see a desktop view of the page, just look at the right side of the page at the header (top of the webpage) and click on <b>fork</b>
 </p>
 <figure class="p-article__img">
-  <img src="{{ site.baseurl }}/assets/img/posts/mobile-blog/fork-theme.png" alt="Jekyyl now starter theme" />
+  <img src="{{ site.baseurl }}/assets/img/posts/mobile-blog/fork-theme.png" alt="Jekyll now starter theme" />
 
   <figcaption>
     Click the fork icon there
@@ -131,7 +131,7 @@ After doing that the next page you are going to see would ask you to change your
 Now change the name of the website to: "github-username.github.io"
  </p>
  <figure class="p-article__img">
-  <img src="{{ site.baseurl }}/assets/img/posts/mobile-blog/rename-theme.png" alt="Jekyyl now starter theme" />
+  <img src="{{ site.baseurl }}/assets/img/posts/mobile-blog/rename-theme.png" alt="Jekyll now starter theme" />
 
   <figcaption>
    Old one looks like this
@@ -139,7 +139,7 @@ Now change the name of the website to: "github-username.github.io"
  </figure>
 
  <figure class="p-article__img">
-  <img src="{{ site.baseurl }}/assets/img/posts/mobile-blog/rename-theme-me.png" alt="rename Jekyyl now starter theme" />
+  <img src="{{ site.baseurl }}/assets/img/posts/mobile-blog/rename-theme-me.png" alt="rename Jekyll now starter theme" />
 
   <figcaption>
    Change it to something like this "with your own github username"
@@ -230,7 +230,7 @@ email: for email (The one used in opening your github account) <br>
 Then just Click on "OK"
  </p>
  <p>
-Now its time to clone your website to your mobike phone <br>
+Now its time to clone your website to your mobile phone <br>
 Click on the Fork icon again <br>
 Just enter your Url like this </p> 
 <figure class="p-article__img">
@@ -283,8 +283,12 @@ Though not really much now, Before the end of this series you will learn how to 
   Next step is Customizing your new website, and introducing you to <b>GIT</b> on your mobile phone... Thanks for reading.
  </p>
  
-
-
+<h6>
+Next part of this series
+</h6>
+<p>
+[Create a blog on your mobile phone part 2]({% link _posts/2020-12-21-create-a-blog-on-your-mobile-phone-with-jekyll-on-github-part-2.md %})
+</p>
 
 
 
