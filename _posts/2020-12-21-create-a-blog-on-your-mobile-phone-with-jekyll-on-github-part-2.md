@@ -144,7 +144,7 @@ you already have a remote repo, so you shouldn't worry about that, what i will i
 </p>
 <h6>
 I guess we are done talking...
-<h6>
+</h6>
 <p>
 Too much talk and explanations (I really hope you get the idea), now lets stop talking and start showing how things work
 </p>
@@ -322,7 +322,7 @@ Click Ok
 </li>
  </ol>
  <figure class="p-article__img">
-  <img src="{{ site.baseurl }}/assets/img/posts/mobile-blog-2/project-pshing.png" alt="Spck editor Git push on mobile" />
+  <img src="{{ site.baseurl }}/assets/img/posts/mobile-blog-2/project-pushing.png" alt="Spck editor Git push on mobile" />
 
   <figcaption>
    Wait for it to push your changes
