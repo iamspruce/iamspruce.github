@@ -20,7 +20,7 @@ Welcome to the series <b>"How to create a blog on your mobile phone with Jekyll 
 Yep i said it... You can create a free blog from your mobile phone, so get ready to start your journey as a blogger...  
 </p>
 <p>
-Alot of people do ask:
+a lot of people do ask:
 <ol class='p-article__items'>
 <li>
 How can i create a website with my phone?
