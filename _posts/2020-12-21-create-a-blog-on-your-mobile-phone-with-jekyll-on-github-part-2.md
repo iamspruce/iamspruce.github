@@ -20,7 +20,7 @@ Quick Recap
 </h1>
 <p>
 Like i said this is the second part of this series, incase you missed the first part you can always go back and read it here: <br> <br>
-[Create a blog on your mobile phone part 1]({% link _posts/2020-12-20-create-a-blog-on-your-mobile-phone-with-jekyll-on-github.md %}). <br>
+<a href="/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.md">Create a blog on your mobile phone part 1</a>. <br>
 Talking about readind the other article, You should really read that article up as this one is just building on what we learned in the orther article <br>
 <ol>
 We learn't a few and very essentials things though:
@@ -107,7 +107,7 @@ What is git? <br><br>
 Git is a distributed version-control system for tracking changes in any set of files... and so on 
 </p>
 <p>
-Basically git is just meant and used to <b>commit</b>, pull and <b>push</b> changes to your <b>remote repository</pull>
+Basically git is just meant and used to <b>commit</b>, pull and <b>push</b> changes to your <b>remote repository</b>
 </p>
 <p>
 a
@@ -359,5 +359,5 @@ Well thats the end of this part of the series... Next stop is <b>Blogging</b>, T
 Previous parts of this series
  </h6>
  <p>
-[Create a blog on your mobile phone part 1]({% link _posts/2020-12-20-create-a-blog-on-your-mobile-phone-with-jekyll-on-github.md %})
+<a href="/create-a-blog-on-your-mobile-phone-with-jekyll-on-github.md">Create a blog on your mobile phone part 1</a>
  </p>
