@@ -6,7 +6,7 @@ author_link: spruce.emma
 summary: >
   Welcome to the second part of "how to create a blog on your mobile phone with jekyll on github", In this part you will learn hot to perform "GIT" actions with your phone. 
 tags: Mobile Blog Design
-image: img/posts/mobile-blog/spck-editor.png
+image: img/posts/mobile-blog-2/preview-web.png
 sharing:
   twitter: Create A Blog On Your Mobile Phone Part 2
   facebook: Create A Blog On Your Mobile Phone Part 2
