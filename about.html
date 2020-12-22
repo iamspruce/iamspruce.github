@@ -3,7 +3,7 @@ layout: default
 title: About Me
 description: I’m Spruce Emmanuel, a front-end web developer and designer based in Edo, Nigeria.
 permalink: /about/
-themeColor: #f7f7f7
+color: #f7f7f7
 ---
 
 
@@ -45,12 +45,13 @@ themeColor: #f7f7f7
                     {% for post in site.posts | limit: 8 %}
 
     <li>  
-
-                <a class="u-url" rel="bookmark" href="{{ post.url }}">
-                    {{ post.title }}
-                  </a>,  <time class="dt-published" datetime="{{ page.date }}">
-                    {{ post.date | date_to_string }}
-                  </time>
+        <p>
+            <a class="u-url" rel="bookmark" href="{{ post.url }}">
+                {{ post.title }}
+              </a>,  <time class="dt-published" datetime="{{ page.date }}">
+                {{ post.date | date_to_string }}
+              </time>
+        </p>
     </li>
     {% endfor %}
                 </ul>

@@ -168,7 +168,7 @@ Other resources to learn from
 <a href="https://jekyllrb.com/tutorials/home/">Jekyll tutorials home</a>
  </p>
   <p>
-<a href="https://jekyllrb.com/docs/blogging">Blogging in jekyll</a>
+<a href="https://jekyllrb.com/docs/step-by-step/08-blogging/">Blogging in jekyll</a>
  </p>
 
  <p>
