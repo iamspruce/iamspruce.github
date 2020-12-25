@@ -80,10 +80,11 @@ Flex items
 </h3>
 <pre class="language-html">
 <code class="language-html">
+
 &lt;!-- html code --&gt;
-<ul class="flex-container">
+&lt;ul class="flex-container"&gt;
 hello i am a flex item too
-&lt;li class="flex-item"&lt;
+&lt;li class="flex-item"&gt;
 Item 1
 &lt;/li&gt;
 &lt;li class="flex-item"&gt;
