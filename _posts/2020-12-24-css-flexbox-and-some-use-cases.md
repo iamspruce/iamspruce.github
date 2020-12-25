@@ -53,17 +53,17 @@ Floats and vertical-align css properties do not have any effect on <b>flex items
 </p>
 <pre class="language-css">
 <code class="language-css">
-<!-- html code -->
-<ul class="flex-container">
-<li class="flex-item">
+&lt;!-- html code --&gt;
+&lt;ul class="flex-container"&gt;
+&lt;li class="flex-item"&lt;
 Item 1
-</li>
-<li class="flex-item">
+&lt;/li&gt;
+&lt;li class="flex-item"&gt;
 Item 2
-</li>
-</ul>
+&lt;/li&gt;
+&lt;/ul&gt;
 
-<!-- css codes -->
+&lt;!-- css codes --&gt;
 .flex-container {
   display: flex;
   
@@ -80,19 +80,19 @@ Flex items
 </h3>
 <pre class="language-html">
 <code class="language-html">
-<!-- html code -->
+&lt;!-- html code --&gt;
 <ul class="flex-container">
 hello i am a flex item too
-<li class="flex-item">
+&lt;li class="flex-item"&lt;
 Item 1
-</li>
-<li class="flex-item">
+&lt;/li&gt;
+&lt;li class="flex-item"&gt;
 Item 2
-</li>
-<li class="flex-item">
+&lt;/li>
+&lt;li class="flex-item"&gt;
 Item 3
-</li>
-</ul>
+&lt;/li&gt;
+&lt;/ul&gt;
 </code>
 </pre>
 <p>
@@ -111,12 +111,12 @@ From the preview(when display: flex; is added to the flex-container) above you s
 
  <pre class="language-html">
 <code class="language-html">
-<!-- html code -->
-<ul class="flex-container">
+&lt;!-- html code --&gt;
+&lt;ul class="flex-container"&gt;
 <!-- anything placed here as a direct child is a flex item -->
-</ul>
+&lt;/ul&gt;
 
-<!-- css codes -->
+&lt;!-- css codes --&gt;
 .flex-container {
   display: flex;
   
@@ -136,7 +136,7 @@ Flexbox can be used to solve many design problems both complex and simple design
 take a look at the responsive website header below 
 </p>
 <div class="codepen">
-{% include codepen.html hash="ExgbxeP"  %}
+{% include codepen.html hash="ExgbxeP" title="flexbox responsive header"  %}
 </div>
 <p></p>
 <h6>
@@ -147,20 +147,20 @@ Lets say you are creating a card component...
 </p>
 <pre class="language-html">
 <code class="language-html">
-<!-- html code -->
-<article class="flex-container">
-<header>
-<!-- card header -->
-</header>
-<p>
-<!-- article content goes in here -->
-</p>
-<footer>
-<h2>
-<!-- card footer items goes here -->
-</h2>
-</footer>
-</article>
+&lt;!-- html code --&gt;
+&lt;article class="flex-container"&gt;
+&lt;header&gt;
+&lt;!-- card header --&gt;
+&lt;/header&gt;
+&lt;p&gt;
+&lt;!-- article content goes in here --&gt;
+&lt;/p&gt;
+&lt;footer&gt;
+&lt;h2&gt;
+&lt;!-- card footer items goes here --&gt;
+&lt;/h2&gt;
+&lt;/footer&gt;
+&lt;/article&gt;
 </code>
 </pre>
 <p>
@@ -168,20 +168,20 @@ Lets say you are creating a card component...
 </p>
 <pre class="language-html">
 <code class="language-html">
-<!-- html code -->
-<article>
-<header>
-<!-- card header -->
-</header>
-<p>
-<!-- article content goes in here -->
-</p>
-<footer>
-<h2>
-<!-- card footer items goes here -->
-</h2>
-</footer>
-</article>
+&lt;!-- html code --&gt;
+&lt;article&gt;
+&lt;header&gt;
+&lt;!-- card header --&gt;
+&lt;/header&gt;
+&lt;p&gt;
+&lt;!-- article content goes in here --&gt;
+&lt;/p&gt;
+&lt;footer&gt;
+&lt;h2&gt;
+&lt;!-- card footer items goes here --&gt;
+&lt;/h2&gt;
+&lt;/footer&gt;
+&lt;/article&gt;
 
 <!-- css codes -->
 article {
@@ -201,7 +201,7 @@ Check it out on codepen...
 you just need to add the flex-grow: 1; to the card content and it will always grow to fill the available spaces
 </p>
 <div class="codepen">
-{% include codepen.html hash="GRjOgZX"  %}
+{% include codepen.html hash="GRjOgZX" title="flex grow" %}
 </div>
 
 <h6>
@@ -213,22 +213,22 @@ Say you want to flip a component, like the Card component we created ealier, you
 
 <pre class="language-html">
 <code class="language-html">
-<!-- html code -->
-<article>
-<header>
-<!-- card header -->
-</header>
-<p>
-<!-- article content goes in here -->
-</p>
-<footer>
-<h2>
-<!-- card footer items goes here -->
-</h2>
-</footer>
-</article>
+&lt;!-- html code --&gt;
+&lt;article&gt;
+&lt;header&gt;
+&lt;!-- card header --&gt;
+&lt;/header&gt;
+&lt;p&gt;
+&lt;!-- article content goes in here --&gt;
+&lt;/p&gt;
+&lt;footer&gt;
+&lt;h2&gt;
+&lt;!-- card footer items goes here --&gt;
+&lt;/h2&gt;
+&lt;/footer&gt;
+&lt;/article&gt;
 
-<!-- css codes -->
+&lt;!-- css codes --&gt;
 
 // styles for the component
  footer {
@@ -260,23 +260,23 @@ One of the cool things about css flexbox is that you can center an element with 
 </p>
 <pre class="language-html">
 <code class="language-html">
-<!-- html code -->
-<div class="c-card">
-<article>
-<header>
-<!-- card header -->
-</header>
-<p>
-<!-- article content goes in here -->
-</p>
-<footer>
-<h2>
-<!-- card footer items goes here -->
-</h2>
-</footer>
-</article>
-</div>
-<!-- css codes -->
+&lt;!-- html code --&gt;
+&lt;div class="c-card"&gt;
+&lt;article&gt;
+&lt;header&gt;
+&lt;!-- card header --&gt;
+&lt;/header&gt;
+&lt;p&gt;
+&lt;!-- article content goes in here --&gt;
+&lt;/p&gt;
+&lt;footer&gt;
+&lt;h2&gt;
+&lt;!-- card footer items goes here --&gt;
+&lt;/h2&gt;
+&lt;/footer&gt;
+&lt;/article&gt;
+&lt;/div&gt;
+&lt;!-- css codes --&gt;
 
 // styles for the component
  .c-card {
