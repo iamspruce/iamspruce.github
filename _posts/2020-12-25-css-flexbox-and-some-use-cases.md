@@ -55,7 +55,7 @@ Floats and vertical-align css properties do not have any effect on <b>flex items
 <code class="language-css">
 &lt;!-- html code --&gt;
 &lt;ul class="flex-container"&gt;
-&lt;li class="flex-item"&lt;
+&lt;li class="flex-item"&gt;
 Item 1
 &lt;/li&gt;
 &lt;li class="flex-item"&gt;
