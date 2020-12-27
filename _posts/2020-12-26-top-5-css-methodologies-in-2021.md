@@ -17,7 +17,7 @@ Css is very difficult to manage when you are dealing with a large system, this i
 <pre class="language-css">
   <code class="language-css">
 
-    &lt;button class="button button-action"&gt;
+&lt;button class="button button-action"&gt;
     Load More
   &lt;/button&gt;
 
