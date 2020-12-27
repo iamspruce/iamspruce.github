@@ -42,7 +42,12 @@ url: "https://iamspruce.github.io"
 staticman_url: "https://spruce-staticman.herokuapp.com/v2/entry/iamspruce/iamspruce.github.io/source/comments"
 
 
-
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : G-4WLJKYZR1L
+    anonymize_ip         : # true, false (default) 
 
 
 # Jekyll 3 now only supports Kramdown for Markdown
