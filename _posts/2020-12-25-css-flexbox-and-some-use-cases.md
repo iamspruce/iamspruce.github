@@ -114,7 +114,7 @@ From the preview(when display: flex; is added to the flex-container) above you s
 <code class="language-html">
 &lt;!-- html code --&gt;
 &lt;ul class="flex-container"&gt;
-<!-- anything placed here as a direct child is a flex item -->
+&lt;!-- anything placed here as a direct child is a flex item --&gt;
 &lt;/ul&gt;
 
 &lt;!-- css codes --&gt;
