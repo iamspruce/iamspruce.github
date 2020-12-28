@@ -1,8 +1,10 @@
 ---
 layout: default
-themeColor: #ffffff
 ---
-    
+ <head>
+  <script src="https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/public/caniuse-embed.min.js"></script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>  
+ </head>   
 <body id="top" class="article-page">
 
 <div class="col-12">
@@ -14,10 +16,7 @@ themeColor: #ffffff
             {{ page.date | date_to_string }}
   </time>
   <span class="c-article__tags p-category">
-  {% for tags in post.tags %}
-    {{ post.tag }},
-  {% endfor %}
-
+    {{ page.tags | join: ', ' }}
   </span>
       </p>
           <h3 class="c-article__title  p-name">
