@@ -5,13 +5,12 @@ author: Spruce
 author_link: spruce.emma
 summary: 'Who said css lines has to be boring? Or just a straight line'
 tags: css effects lines
-image: img/posts/red-button.png
+image: img/posts/lines.png
 sharing:
   twitter: How to create 5 Cool Css only line effect
   facebook: How to create 5 Cool Css only line effect
 created: 2021-01-01T02:08:36+01:00
-type: Checklist
-lastmod: 2021-01-01T03:31:03+01:00
+lastmod: 2021-01-01T03:46:22+01:00
 ---
 
 <p class="lead">
@@ -19,7 +18,7 @@ When we talk about css lines we shouldn't always think about ordinary "one way s
 </p>
 
 <p>
-Lines can be used to style up our web pages in a lot of ways. That is just <b>5 effects</b> are just a few things you could do with Lines
+Lines can be used to style up our web pages in a lot of ways. That is, just <b>5 effects</b> are just a few things you could do with Lines
 </p>
 
 <p>
@@ -252,4 +251,65 @@ Add line in the middle of a word
 <p>
 Have you ever wanted create a header like the one below?
 </p>
+ <figure class="p-article__img">
+  <img src="{{ site.baseurl }}/assets/img/line-article.png" alt="image of header text with Line from smashingmagazine" />
 
+<figcaption>
+Image of header with line from smashingmagazine
+</figcaption>
+ </figure>
+
+<p>
+What if I told you it is quite easy to do with CSS 
+</p>
+
+ <pre class="language-html">
+<code class="language-html">
+ // HTML code
+   &lt;div class="line-before"&gt;
+     &lt;span class="line-before__inner"&gt;
+     Latest posts
+    &lt;/span&gt;
+    &lt;/div&gt;
+
+// Css 
+.line-before__inner {
+ position:relative;
+ display:block;
+ width:100%;
+ color:#333;
+ background-position:center;
+ z-index:2;
+ padding-left:calc(100px + 1em);
+}
+
+.line-before__inner::before {
+ content:'';
+ position:absolute;
+ display:block;
+ width:100px;
+ height:1px;
+ background-color:currentColor;
+ left:0;
+ top:50%
+} 
+
+</code>
+</pre>
+<p></p> 
+
+ <div style="border: 2px solid #ccx; font-size: 18px">
+ <div class="line-before">
+        <span class="line-before__inner">
+   Latest posts
+    </span>
+    </div> 
+    </div> 
+<p></p>
+<p>
+The CSS above is self explanatory, so that's how to add a line in the middle of a text item
+</p>
+
+<p>
+Thanks for reading
+</p>
