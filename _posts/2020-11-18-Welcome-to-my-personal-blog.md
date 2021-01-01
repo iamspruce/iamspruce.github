@@ -3,8 +3,7 @@ layout: post
 title: Welcome to my personal blog and online journal
 author: Spruce
 author_link: spruce.emma
-summary: >
-  An introduction plus a welcome to my personal blog and online journal
+summary: An introduction plus a welcome to my personal blog and online journal
 tags: About Welcome Intro
 image: img/hero.png
 sharing:
@@ -12,8 +11,7 @@ sharing:
   facebook: Welcome to my personal blog and online journal
 ---
 
-
- <p class="p-article__lead">
+<p class="p-article__lead">
 Hey there welcome to my personal blog where i write about my learning process as a supposed web designer.
 </p>
  <figure class="p-article__img">

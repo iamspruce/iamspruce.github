@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Top 5 Css Methodologies In 2021 
+title: Top 5 Css Methodologies In 2021
 author: Spruce
 author_link: spruce.emma
-summary: >
-   See the top 5 css methodologies in 2021 
+summary: See the top 5 css methodologies in 2021
 tags: css methodologies
 image: img/posts/red-button.png
 sharing:
   twitter: Top 5 Css Methodologies In 2021
   facebook: Top 5 Css Methodologies In 2021
+lastmod: 2021-01-01T02:08:35+01:00
 ---
 
 Css is very difficult to manage when you are dealing with a large system, this is because Everything in css is <b>Global</b>
