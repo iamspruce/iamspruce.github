@@ -5,12 +5,12 @@ author: Spruce
 author_link: spruce.emma
 summary: 'Who said css lines has to be boring? Or just a straight line'
 tags: css effects lines
-image: img/posts/lines.png
+image: img/posts/lines.jpg
 sharing:
   twitter: How to create 5 Cool Css only line effect
   facebook: How to create 5 Cool Css only line effect
 created: 2021-01-01T02:08:36+01:00
-lastmod: 2021-01-01T03:46:22+01:00
+lastmod: 2021-01-01T04:08:30+01:00
 ---
 
 <p class="lead">
@@ -252,7 +252,7 @@ Add line in the middle of a word
 Have you ever wanted create a header like the one below?
 </p>
  <figure class="p-article__img">
-  <img src="{{ site.baseurl }}/assets/img/line-article.png" alt="image of header text with Line from smashingmagazine" />
+  <img src="{{ site.baseurl }}/assets/img/posts/line-article.jpg" alt="image of header text with Line from smashingmagazine" />
 
 <figcaption>
 Image of header with line from smashingmagazine
