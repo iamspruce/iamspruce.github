@@ -9,8 +9,6 @@ image: img/posts/lines.jpg
 sharing:
   twitter: How to create 5 Cool Css only line effect
   facebook: How to create 5 Cool Css only line effect
-created: 2021-01-01T02:08:36+01:00
-lastmod: 2021-01-01T04:08:30+01:00
 ---
 
 <p class="lead">
